@@ -13,7 +13,7 @@ t7=st.slider("🧑AGE",1,100)
 t8=st.selectbox("🩸BLOOD GROUP",['A+','B-','AB+','AB-','O+'])
 
 if st.button("📝SIGNUP"):
-    conn=pymongo.MongoClient("mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.8.2")
+    conn=pymongo.MongoClient("mongodb+srv://anjalibhardwajjjj25_db_user:RGeVqX8ngrKphiH1@cluster0.uem1qrf.mongodb.net/?appName=Cluster0")
     mydb=conn["iter"]
     table=mydb["user_info"]
     table.insert_one({"user_name":t1,"password":t2,"email":t3,"mobile":t4,"address":t5,"gender":t6,"age":t7,"blood group":t8})
