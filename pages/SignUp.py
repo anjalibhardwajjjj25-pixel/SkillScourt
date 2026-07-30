@@ -19,7 +19,7 @@ if st.button("📝SIGNUP"):
     table.insert_one({"user_name":t1,"password":t2,"email":t3,"mobile":t4,"address":t5,"gender":t6,"age":t7,"blood group":t8})
     server=smtplib.SMTP('smtp.gmail.com',587)
     server.starttls()
-    server.login("anjalibhardwajjjj25@gmail.com","qbff ogcm tsld kgix")
+    server.login("anjalibhardwajjjj25@gmail.com","qbffogcmtsldkgix")
     server.sendmail("anjalibhardwajjjj25@gmail.com",t3,"Hello! Your signup was successful.")
     server.quit()
     st.write("SUCCESSFULLY SINGUP!")
