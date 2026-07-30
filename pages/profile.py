@@ -7,7 +7,8 @@ else:
        st.stop()
 p1=st.session_state['user']
 p2=st.session_state['password']
-conn=pymongo.MongoClient("mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.9.2")
+conn=pymongo.MongoClient("mongodb+srv://anjalibhardwajjjj25_db_user:RGeVqX8ngrKphiH1@cluster0.uem1qrf.mongodb.net/?appName=Cluster0")
+    
 mydb=conn["iter"]
 table=mydb["user_info"]
 st.success(f"Welcome:{st.session_state['user']}")
