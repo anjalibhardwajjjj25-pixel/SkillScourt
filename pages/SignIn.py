@@ -1,6 +1,7 @@
 import streamlit as st
 import pymongo
-conn=pymongo.MongoClient("conn=pymongo.MongoClient("mongodb+srv://anjalibhardwajjjj25_db_user:RGeVqX8ngrKphiH1@cluster0.uem1qrf.mongodb.net/?appName=Cluster0")
+conn=pymongo.MongoClient("mongodb+srv://anjalibhardwajjjj25_db_user:RGeVqX8ngrKphiH1@cluster0.uem1qrf.mongodb.net/?appName=Cluster0")
+    
 mydb=conn["iter"]
 table=mydb["user_info"]
 st.title("⚕️Health Prediction Applications")
